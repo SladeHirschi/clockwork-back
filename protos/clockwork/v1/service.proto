@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package protos.clockwork.v1;
+
+import "protos/clockwork/v1/entities.proto";
+
+option go_package = "protos/clockwork/v1;clockwork";
+
+service ClockWorkService {
+  rpc ClockIn(ClockInRequest) returns (ClockInResponse);
+}

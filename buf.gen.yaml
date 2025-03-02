@@ -1,6 +1,6 @@
 version: v1
 plugins:
   - name: go
-    out: protos
+    out: .
   - name: go-grpc
-    out: protos
+    out: .

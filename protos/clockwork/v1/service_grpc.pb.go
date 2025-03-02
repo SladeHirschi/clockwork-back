@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             (unknown)
-// source: protos/service.proto
+// source: protos/clockwork/v1/service.proto
 
-package __
+package clockwork
 
 import (
 	context "context"
@@ -19,7 +19,7 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	ClockWorkService_ClockIn_FullMethodName = "/clockwork.ClockWorkService/ClockIn"
+	ClockWorkService_ClockIn_FullMethodName = "/protos.clockwork.v1.ClockWorkService/ClockIn"
 )
 
 // ClockWorkServiceClient is the client API for ClockWorkService service.
@@ -108,7 +108,7 @@ func _ClockWorkService_ClockIn_Handler(srv interface{}, ctx context.Context, dec
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var ClockWorkService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "clockwork.ClockWorkService",
+	ServiceName: "protos.clockwork.v1.ClockWorkService",
 	HandlerType: (*ClockWorkServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -117,5 +117,5 @@ var ClockWorkService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "protos/service.proto",
+	Metadata: "protos/clockwork/v1/service.proto",
 }
