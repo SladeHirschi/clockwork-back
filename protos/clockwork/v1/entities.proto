@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package protos.clockwork.v1;
-
-option go_package = "protos/clockwork/v1;clockwork";
-
-message ClockInRequest {}
-
-message ClockInResponse {}

@@ -36,7 +36,7 @@ func init() {
 	rootCmd.AddCommand(startCmd) // Add subcommands
 
 	// Flag for start command
-	startCmd.Flags().String("port", "50051", "Port to run the gRPC server on")
+	startCmd.Flags().String("port", "8080", "Port to run the http server on")
 	viper.BindPFlag("server.port", startCmd.Flags().Lookup("port"))
 }
 
