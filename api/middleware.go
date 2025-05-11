@@ -20,7 +20,10 @@ func (c *ClockworkApi) authMiddleware(next http.Handler) http.Handler {
 			return
 		}
 
-		// Real token verification logic would go here
+		if token != "Bearer faketoken123" {
+			http.Error(w, "Unauthorized", http.StatusUnauthorized)
+			return
+		}
 
 		next.ServeHTTP(w, r)
 	})
